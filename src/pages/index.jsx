@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import Nav from '@/components/Nav';
 import Landing from '@/components/Landing';
+import ServiceArea from '@/components/ServiceArea';
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -15,9 +16,15 @@ export default function Home() {
 				</div>
 			</header>
 			<main className="flex-1">
-				<section className="relative min-h-[50vh]">
+				<section className="relative z-10">
 					<div className="inner-column">
 						<Landing></Landing>
+					</div>
+				</section>
+
+				<section className="">
+					<div className="inner-column">
+						<ServiceArea></ServiceArea>
 					</div>
 				</section>
 			</main>
