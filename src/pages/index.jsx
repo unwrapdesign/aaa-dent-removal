@@ -22,7 +22,7 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="">
+				<section className="bg-slate-100">
 					<div className="inner-column">
 						<ServiceArea></ServiceArea>
 					</div>
