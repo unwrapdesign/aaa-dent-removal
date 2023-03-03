@@ -69,7 +69,7 @@ p a {
 	}
 
 	.loud-voice {
-		@apply text-2xl font-extrabold xs:text-2xl md:text-2xl;
+		@apply text-2xl font-bold xs:text-2xl md:text-2xl;
 	}
 
 	#__next {

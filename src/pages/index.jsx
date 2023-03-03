@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Nav from '@/components/Nav';
 import Landing from '@/components/Landing';
 import ServiceArea from '@/components/ServiceArea';
+import Services from '@/components/Services';
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -16,17 +17,9 @@ export default function Home() {
 				</div>
 			</header>
 			<main className="flex-1">
-				<section className="relative z-10">
-					<div className="inner-column">
-						<Landing></Landing>
-					</div>
-				</section>
-
-				<section className="bg-slate-100">
-					<div className="inner-column">
-						<ServiceArea></ServiceArea>
-					</div>
-				</section>
+				<Landing></Landing>
+				<ServiceArea></ServiceArea>
+				<Services title="Professional mobile dent repair"></Services>
 			</main>
 
 			<footer>

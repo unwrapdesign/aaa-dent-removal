@@ -50,7 +50,7 @@ export default function LocationPicker({ location, state, cities, weekday, weeke
 					</li>
 				</ul>
 			</contact-info>
-			<location-links class="mt-5 space-x-3">
+			<location-links class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-x-6 lg:gap-4 xl:gap-6">
 				<Button href={location}>View Location</Button>
 				<Button href={link}>Get Local Offer</Button>
 			</location-links>
