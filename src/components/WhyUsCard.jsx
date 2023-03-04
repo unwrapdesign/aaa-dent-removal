@@ -2,6 +2,7 @@ import Wrench from '@/components/Wrench';
 import Car from '@/components/Car';
 import CarDoor from '@/components/CarDoor';
 export default function WhyUsCard({ image, header, text, className }) {
+	// $todo: change to different images / refactor to be better
 	let images = [<Wrench key={3} />, <Car key={4} />, <CarDoor key={5} />];
 
 	return (
