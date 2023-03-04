@@ -22,12 +22,21 @@ export default function Home() {
 				<ServiceArea></ServiceArea>
 				<Services heading="Professional mobile dent repair" eyebrow="What we do"></Services>
 				<GraphicDiptych
-					heading="Paintless dent repair"
 					eyebrow="What we do"
+					heading="Paintless dent repair"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.  Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero"
 					buttonText="Contact us"
 					buttonLink="/contact"
 					index={0}
+				></GraphicDiptych>
+				<GraphicDiptych
+					eyebrow="Dent repair"
+					heading="Mobile paintless dent repair specialists"
+					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.  Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero"
+					buttonText="Contact us"
+					buttonLink="/contact"
+					index={1}
+					flipped={true}
 				></GraphicDiptych>
 			</main>
 
