@@ -6,6 +6,7 @@ import Landing from '@/components/Landing';
 import ServiceArea from '@/components/ServiceArea';
 import Services from '@/components/Services';
 import GraphicDiptych from '@/components/GraphicDiptych';
+import Gallery from '@/components/Gallery';
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,12 @@ export default function Home() {
 					flipped={true}
 					background="bg-zinc-900"
 				></GraphicDiptych>
+
+				<Gallery
+					eyebrow="Gallery"
+					header="Some work from our previous clients"
+					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. "
+				></Gallery>
 			</main>
 
 			<footer>
