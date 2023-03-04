@@ -37,6 +37,7 @@ export default function Home() {
 					buttonLink="/contact"
 					index={1}
 					flipped={true}
+					background="bg-zinc-900"
 				></GraphicDiptych>
 			</main>
 
