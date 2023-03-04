@@ -5,6 +5,7 @@ import Nav from '@/components/Nav';
 import Landing from '@/components/Landing';
 import ServiceArea from '@/components/ServiceArea';
 import Services from '@/components/Services';
+import GraphicDiptych from '@/components/GraphicDiptych';
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,15 @@ export default function Home() {
 			<main className="flex-1">
 				<Landing></Landing>
 				<ServiceArea></ServiceArea>
-				<Services title="Professional mobile dent repair"></Services>
+				<Services heading="Professional mobile dent repair" eyebrow="What we do"></Services>
+				<GraphicDiptych
+					heading="Paintless dent repair"
+					eyebrow="What we do"
+					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.  Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero"
+					buttonText="Contact us"
+					buttonLink="/contact"
+					index={0}
+				></GraphicDiptych>
 			</main>
 
 			<footer>

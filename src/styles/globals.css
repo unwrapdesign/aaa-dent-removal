@@ -79,4 +79,8 @@ p a {
 	section:not(:nth-of-type(1)) {
 		@apply py-10 md:py-24;
 	}
+
+	p {
+		@apply leading-relaxed;
+	}
 }
