@@ -7,6 +7,7 @@ import ServiceArea from '@/components/ServiceArea';
 import Services from '@/components/Services';
 import GraphicDiptych from '@/components/GraphicDiptych';
 import Gallery from '@/components/Gallery';
+import WhyUs from '@/components/WhyUs';
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -46,6 +47,15 @@ export default function Home() {
 					header="Some work from our previous clients"
 					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. "
 				></Gallery>
+
+				<WhyUs
+					eyebrow="Why choose us"
+					heading="Paintless dent repair you can trust"
+					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue.
+                ----
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue.
+                "
+				></WhyUs>
 			</main>
 
 			<footer>

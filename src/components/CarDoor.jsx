@@ -6,7 +6,7 @@ export default function CarDoor() {
 			viewBox="0 0 24 24"
 			strokeWidth={1.5}
 			stroke="currentColor"
-			className="h-12 w-12 stroke-sky-800"
+			className="max-w-[3rem] stroke-sky-800"
 		>
 			<path
 				strokeLinecap="round"
