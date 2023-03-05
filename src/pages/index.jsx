@@ -10,6 +10,7 @@ import Gallery from '@/components/Gallery';
 import WhyUs from '@/components/WhyUs';
 import Testimonials from '@/components/Testimonials';
 import ContactUs from '@/components/ContactUs';
+import Footer from '@/components/Footer';
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -84,12 +85,7 @@ export default function Home() {
 					buttonTextTwo="Contact Jacksonville, FL"
 				></ContactUs>
 			</main>
-
-			<footer>
-				<div className="inner-column">
-					<h1>footer</h1>
-				</div>
-			</footer>
+			<Footer phone="(555) 555 5555" email="info@example.com" />
 		</>
 	);
 }

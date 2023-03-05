@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 export default function Nav() {
 	return (
 		<nav className="relative flex flex-row items-center justify-between ">
-			<div id="logo" className="w-full max-w-[250px] ">
+			<div id="logo" className="w-full max-w-[250px]">
 				<Logo />
 			</div>
 			<ul className="flex flex-row items-center gap-8">

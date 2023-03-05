@@ -10,7 +10,7 @@ export default function ContactUs({ eyebrow, header, text, buttonText, buttonTex
             after:absolute after:-top-[105px] after:ml-[400px] after:block after:h-[600px] after:w-[150px] after:-rotate-[25deg] after:bg-gradient-to-b after:from-slate-100 after:opacity-10"
 			></div>
 			<div className="inner-column relative flex flex-row justify-between">
-				<div className="mb-24">
+				<div className="lg:mb-24">
 					<Eyebrow color="text-sky-500">{eyebrow}</Eyebrow>
 					<h2 className="attention-voice text-neutral-100">{header}</h2>
 					<p className="mt-4 max-w-prose text-neutral-100 lg:max-w-[55ch] xl:max-w-prose">{text}</p>

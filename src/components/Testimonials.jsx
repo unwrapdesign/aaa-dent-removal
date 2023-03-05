@@ -50,7 +50,7 @@ export default function Testimonials({ eyebrow, header, text, location }) {
 		},
 	];
 	return (
-		<section className="mb-32">
+		<section className="lg:mb-32">
 			<div className="inner-column">
 				<div>
 					<Eyebrow>{eyebrow}</Eyebrow>

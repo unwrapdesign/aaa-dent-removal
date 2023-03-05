@@ -80,8 +80,13 @@ p a {
 		@apply flex min-h-screen flex-col;
 	}
 
-	section:not(:nth-of-type(1)) {
-		@apply py-10 md:py-24;
+	section:not(:nth-of-type(1)),
+	footer {
+		@apply py-14 md:py-24;
+	}
+
+	footer .inner-column section {
+		@apply py-0 md:py-0;
 	}
 
 	p {
@@ -89,6 +94,6 @@ p a {
 	}
 
 	#contact-us {
-		@apply pb-0;
+		@apply lg:pb-0;
 	}
 }

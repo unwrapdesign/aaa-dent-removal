@@ -17,25 +17,25 @@ export default function WhyUs({ eyebrow, heading, text, children }) {
 						image={0}
 						header="Trusted company"
 						text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
-						className="col-span-3 border bg-slate-50 py-7 px-6"
+						className="col-span-3 border bg-neutral-50 py-7 px-6"
 					></WhyUsCard>
 					<WhyUsCard
 						image={1}
 						header="30+ years experience"
 						text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
-						className="col-span-3 border bg-slate-50 py-7 px-6"
+						className="col-span-3 border bg-neutral-50 py-7 px-6"
 					></WhyUsCard>
 					<WhyUsCard
 						image={2}
 						header="Licensed & insured"
 						text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
-						className="col-span-3 border bg-slate-50 py-7 px-6"
+						className="col-span-3 border bg-neutral-50 py-7 px-6"
 					></WhyUsCard>
 					<WhyUsCard
 						image={2}
 						header="Highly reviewed"
 						text="Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
-						className="col-span-3 border bg-slate-50 py-7 px-6"
+						className="col-span-3 border bg-neutral-50 py-7 px-6"
 					></WhyUsCard>
 				</div>
 			</div>
