@@ -21,7 +21,7 @@ export default function GraphicDiptych({ eyebrow, heading, text, buttonText, but
 						</picture>
 					</div>
 					<div className={`${flipped === true ? 'row-start-1' : ''}`}>
-						<Eyebrow color={`${background ? 'text-cyan-500' : ''}`}>{eyebrow}</Eyebrow>
+						<Eyebrow color={`${background ? 'text-sky-500' : ''}`}>{eyebrow}</Eyebrow>
 						<h2 className="attention-voice">{heading}</h2>
 						<p className="mt-4 mb-6 max-w-prose">{text}</p>
 						<Button href={buttonLink}>{buttonText}</Button>

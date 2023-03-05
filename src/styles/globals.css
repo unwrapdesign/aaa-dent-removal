@@ -87,4 +87,8 @@ p a {
 	p {
 		@apply leading-relaxed;
 	}
+
+	#contact-us {
+		@apply pb-0;
+	}
 }

@@ -9,6 +9,7 @@ import GraphicDiptych from '@/components/GraphicDiptych';
 import Gallery from '@/components/Gallery';
 import WhyUs from '@/components/WhyUs';
 import Testimonials from '@/components/Testimonials';
+import ContactUs from '@/components/ContactUs';
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -55,7 +56,7 @@ export default function Home() {
 				></Gallery>
 
 				<WhyUs eyebrow="Why choose us" heading="Paintless dent repair you can trust" text="">
-					<p className="mt-6 max-w-prose">
+					<p className="mt-4 max-w-prose">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus.
 						Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo
 						consectetur felis augue.
@@ -74,6 +75,14 @@ export default function Home() {
 					text="At Stitch Cleaning Service, let us help you solve problems so that you can focus on your mission. We support businesses through periods of expansion, succession."
 					location="default"
 				></Testimonials>
+
+				<ContactUs
+					eyebrow="Contact us"
+					header="Ready to get Started?"
+					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas adipiscing nulla suspendisse bibendum arcu diam, pellentesque lorem. Amet hac et sed rhoncus magna. Nisl neque ut varius volutpat morbi."
+					buttonText="Contact Rocklin, CA"
+					buttonTextTwo="Contact Jacksonville, FL"
+				></ContactUs>
 			</main>
 
 			<footer>
