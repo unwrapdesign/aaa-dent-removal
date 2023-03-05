@@ -10,7 +10,7 @@ export default function GraphicDiptych({ eyebrow, heading, text, buttonText, but
 	return (
 		<section className={`${background ? background + ' text-white' : 'bg-slate-100'}`}>
 			<div className="inner-column">
-				<graphic-diptych class={`grid grid-cols-1 items-center gap-12 md:grid-cols-2 `}>
+				<graphic-diptych class={`grid grid-cols-1 items-center gap-16 md:grid-cols-2 `}>
 					<div className="">
 						<picture
 							className={`relative z-10 block max-w-[500px] before:absolute before:-top-[15px] before:-right-[15px] before:-z-10 before:h-[300px] before:w-[200px] before:bg-cyan-800 after:absolute after:-bottom-[15px] after:-left-[15px] after:-z-10 after:h-[300px] after:w-[200px] after:bg-cyan-800 ${

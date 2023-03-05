@@ -19,7 +19,9 @@ export default function Nav() {
 					<Link href="/locations">Locations</Link>
 				</li>
 				<li>
-					<Button href="/contact">FREE Estimate</Button>
+					<Button href="/contact" className="py-2 md:px-6">
+						FREE Estimate
+					</Button>
 				</li>
 			</ul>
 		</nav>

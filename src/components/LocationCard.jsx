@@ -2,13 +2,13 @@ import Phone from '@/components/Phone';
 import Email from '@/components/Email';
 import Button from '@/components/Button';
 
-export default function LocationPicker({ location, state, cities, weekday, weekend, phone, email, link, offer }) {
+export default function LocationCard({ location, state, cities, weekday, weekend, phone, email, link, offer }) {
 	return (
 		<location-card class="border border-slate-200 bg-slate-50 px-8 py-8">
 			<h3 className="loud-voice">
 				{location}, {state}
 			</h3>
-			<p className="italic">{cities}</p>
+			<p className="italic text-slate-700">{cities}</p>
 			{/* <ul className="max-w-fit">
 				<li className="flex flex-row justify-between">
 					Mon - Fri <span>{weekday}</span>

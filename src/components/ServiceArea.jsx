@@ -1,4 +1,4 @@
-import LocationPicker from '@/components/LocationPicker';
+import LocationCard from '@/components/LocationCard';
 import Eyebrow from '@/components/Eyebrow';
 export default function ServiceArea() {
 	return (
@@ -13,7 +13,7 @@ export default function ServiceArea() {
 					</p>
 				</text-content>
 				<div className="flex max-w-fit flex-col gap-4 md:flex-row md:gap-8">
-					<LocationPicker
+					<LocationCard
 						location="Rocklin"
 						state="CA"
 						cities="Roseville, Lincoln, Folsom, Granite Bay"
@@ -22,8 +22,8 @@ export default function ServiceArea() {
 						phone="(916) 879-1926"
 						email="aaadentremoval@gmail.com"
 						link="/rocklin-dent-repair"
-					></LocationPicker>
-					<LocationPicker
+					></LocationCard>
+					<LocationCard
 						location="Jacksonville"
 						state="FL"
 						cities="Lakeside, Yulee, Fleming Island, Oakleaf"
@@ -32,7 +32,7 @@ export default function ServiceArea() {
 						phone="(904) 944-2923"
 						email="aaadentremoval@gmail.com"
 						link="/jacksonville-dent-repair"
-					></LocationPicker>
+					></LocationCard>
 				</div>
 			</div>
 		</section>
