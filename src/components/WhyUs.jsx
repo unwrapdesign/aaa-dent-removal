@@ -2,14 +2,14 @@ import Eyebrow from './Eyebrow';
 
 import WhyUsCard from './WhyUsCard';
 
-export default function WhyUs({ eyebrow, heading, text }) {
+export default function WhyUs({ eyebrow, heading, text, children }) {
 	return (
 		<section className="bg-slate-100">
 			<div className="inner-column grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-3">
 				<div className="lg:col-span-5">
 					<Eyebrow>{eyebrow}</Eyebrow>
 					<h2 className="attention-voice max-w-[14ch]">{heading}</h2>
-					<p className="mt-6 max-w-prose">{text}</p>
+					{children}
 				</div>
 
 				<div className="grid grid-cols-1 gap-4 sm:grid-cols-6 lg:col-span-6 lg:col-start-7">

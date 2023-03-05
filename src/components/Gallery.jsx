@@ -2,7 +2,7 @@ import Button from './Button';
 import Eyebrow from './Eyebrow';
 import GalleryShowcase from './GalleryShowcase';
 
-export default function Gallery({ eyebrow, header, text }) {
+export default function Gallery({ eyebrow, header, text, images }) {
 	return (
 		<section>
 			<div className="inner-column">
@@ -13,7 +13,7 @@ export default function Gallery({ eyebrow, header, text }) {
 					<Button href="/contact">View More</Button>
 				</text-content>
 
-				<GalleryShowcase></GalleryShowcase>
+				<GalleryShowcase images={images}></GalleryShowcase>
 			</div>
 		</section>
 	);

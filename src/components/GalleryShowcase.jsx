@@ -1,5 +1,6 @@
-export default function GalleryShowcase() {
-	// $todo: make these images based off the city you're on?
+export default function GalleryShowcase(images) {
+	//images is an array of uuids from uploadcare
+
 	return (
 		<div className="grid grid-cols-12 gap-2 sm:gap-3">
 			<picture className="col-span-12 sm:col-span-6">

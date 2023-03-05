@@ -1,5 +1,8 @@
 import Eyebrow from '@/components/Eyebrow';
 import ServiceCard from '@/components/ServiceCard';
+import Car from './Car';
+import CarDoor from './CarDoor';
+import Wrench from './Wrench';
 
 export default function Services({ heading }) {
 	return (
@@ -20,16 +23,17 @@ export default function Services({ heading }) {
 						service="Paintless dent repair"
 						text="Sed ultricies lectus non vulputate scelerisque. Morbi eu nisl quis massa efficitur semper nec in massa semper nec in massa Morbi eu nisl quis massa efficitur."
 						image={0}
+						svg={<Wrench />}
 					/>
 					<ServiceCard
 						service="Mobile dent repair"
 						text="Sed ultricies lectus non vulputate scelerisque. Morbi eu nisl quis massa."
-						image={1}
+						svg={<Car />}
 					/>
 					<ServiceCard
 						service="Door ding removal"
 						text="Sed ultricies lectus non vulputate scelerisque. Morbi eu nisl quis massa efficitur semper nec in massa."
-						image={2}
+						svg={<CarDoor />}
 					/>
 				</div>
 			</div>
