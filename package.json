@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@unwrapdev/library": "^0.1.14",
+    "@unwrapdev/library": "^0.1.17",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
     "eslint": "8.35.0",

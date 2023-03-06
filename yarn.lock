@@ -2311,10 +2311,10 @@
     "@typescript-eslint/types" "5.54.0"
     "eslint-visitor-keys" "^3.3.0"
 
-"@unwrapdev/library@^0.1.14":
-  "integrity" "sha512-Apz/ObxBwuNu4T5jru8VFx+/n+WL0/roroGQIpNIRX8mPsRxNpbhXIkttu1AB+3iw66Bpfg+WYshDA9J4VJMFA=="
-  "resolved" "https://registry.npmjs.org/@unwrapdev/library/-/library-0.1.14.tgz"
-  "version" "0.1.14"
+"@unwrapdev/library@^0.1.17":
+  "integrity" "sha512-cRSdBya0WAmd/oFDDDflsXrZBYqrskoIeYZ+CnMYYubbm97rXapbC93vrFaHihNuk6ma3UVHr6U5a/vIqqHT5Q=="
+  "resolved" "https://registry.npmjs.org/@unwrapdev/library/-/library-0.1.17.tgz"
+  "version" "0.1.17"
   dependencies:
     "@babel/polyfill" "^7.12.1"
     "@radix-ui/react-accordion" "^1.1.0"

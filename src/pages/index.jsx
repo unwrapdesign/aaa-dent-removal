@@ -11,7 +11,6 @@ import WhyUs from '@/components/WhyUs';
 import Testimonials from '@/components/Testimonials';
 import ContactUs from '@/components/ContactUs';
 import { Accordion, ButtonTest } from '@unwrapdev/library';
-// import ButtonTest from "@unwrapdev/library/dist/components/ButtonTest/ButtonTest";
 
 export default function Home() {
 	return (
@@ -26,34 +25,26 @@ export default function Home() {
 				<div className="p-10 mx-10 my-40 bg-orange-50 border border-neutral-500">
 					<ButtonTest text="asd" />
 					<Accordion
+						rootClass="p-4 shadow-md bg-white"
+						itemClass="border !border-slate-200 !p-3"
+						targetClass="!bg-slate-200"
 						items={[
 							{
 								value: 'item-1',
-								trigger: {
-									body: 'Item 1 Trigger',
-								},
-								content: {
-									body: 'Item 1 Content',
-								},
+								trigger: "Item 1 Trigger",
+								content: "Item 1 Content"
 							},
 							{
 								value: 'item-2',
-								trigger: {
-									body: 'Item 2 Trigger',
-								},
-								content: {
-									body: 'Item 2 Content',
-								},
+								trigger: "Item 2 Trigger",
+								content: "Item 2 Content"
 							},
 							{
 								value: 'item-3',
-								trigger: {
-									body: 'Item 3 Trigger',
-								},
-								content: {
-									body: 'Item 3 Content',
-								},
+								trigger: "Item 3 Trigger",
+								content: "Item 3 Content"
 							},
+							
 						]}
 					/>
 				</div>
