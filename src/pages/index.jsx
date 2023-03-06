@@ -10,7 +10,7 @@ import Gallery from '@/components/Gallery';
 import WhyUs from '@/components/WhyUs';
 import Testimonials from '@/components/Testimonials';
 import ContactUs from '@/components/ContactUs';
-import { ButtonTest } from '@unwrapdev/library';
+import { Accordion, ButtonTest } from '@unwrapdev/library';
 // import ButtonTest from "@unwrapdev/library/dist/components/ButtonTest/ButtonTest";
 
 export default function Home() {
@@ -23,10 +23,40 @@ export default function Home() {
 			</header>
 			<main className="flex-1">
 				<Landing></Landing>
-					<div className="p-10 mx-10 my-40 bg-orange-50 border border-neutral-500">
-						test
-						<ButtonTest text="asd" />
-					</div>
+				<div className="p-10 mx-10 my-40 bg-orange-50 border border-neutral-500">
+					<ButtonTest text="asd" />
+					<Accordion
+						items={[
+							{
+								value: 'item-1',
+								trigger: {
+									body: 'Item 1 Trigger',
+								},
+								content: {
+									body: 'Item 1 Content',
+								},
+							},
+							{
+								value: 'item-2',
+								trigger: {
+									body: 'Item 2 Trigger',
+								},
+								content: {
+									body: 'Item 2 Content',
+								},
+							},
+							{
+								value: 'item-3',
+								trigger: {
+									body: 'Item 3 Trigger',
+								},
+								content: {
+									body: 'Item 3 Content',
+								},
+							},
+						]}
+					/>
+				</div>
 
 				<ContactUs
 					eyebrow="Contact us"
