@@ -4,9 +4,9 @@ import Button from '@/components/Button';
 
 export default function Nav() {
 	return (
-		<nav className="relative flex flex-row items-center justify-between ">
+		<nav className="relative flex flex-row items-center justify-between text-sm ">
 			<div id="logo" className="w-full max-w-[250px]">
-				<Logo />
+				<Logo footer={false} />
 			</div>
 			<ul className="flex flex-row items-center gap-8">
 				<li>
@@ -19,7 +19,7 @@ export default function Nav() {
 					<Link href="/locations">Locations</Link>
 				</li>
 				<li>
-					<Button href="/contact" className="py-2 md:px-6">
+					<Button href="/contact" className="py-2 text-sm md:px-6">
 						FREE Estimate
 					</Button>
 				</li>

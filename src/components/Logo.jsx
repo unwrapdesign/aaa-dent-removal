@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-export default function Logo(footer) {
+export default function Logo({ footer, className }) {
 	return (
 		<svg
 			viewBox="0 0 1627 301"
@@ -9,14 +9,15 @@ export default function Logo(footer) {
 			clip-rule="evenodd"
 			stroke-linejoin="round"
 			stroke-miterlimit="2"
+			className={className}
 		>
 			<path id="Page-2" fill="none" d="M0 0h1626.36v300.748H0z" />
 			<g id="Layer-2">
 				<g
 					id="aaa"
 					fill={clsx('', {
-						'#102C3D': footer,
-						'#dee6ed': !footer,
+						'#102C3D': footer === true,
+						'#dee6ed': footer === false,
 					})}
 					fill-rule="nonzero"
 				>
@@ -26,15 +27,15 @@ export default function Logo(footer) {
 					<path
 						d="m694.195 32.8-41.084 124.042h-50L644.195 32.8c3.266-9.875-2.171-20.025-11.225-23.408-.638-.238-.463-1.175.221-1.175h43.212c12.75 0 21.792 12.5 17.792 24.583"
 						fill={clsx('', {
-							'#0f2c3c': footer,
-							'#dee6ef': !footer,
+							'#0f2c3c': footer === true,
+							'#dee6ef': footer === false,
 						})}
 					/>
 					<path
 						d="m754.463 32.8-41.084 124.042h-50L704.463 32.8c3.266-9.875-2.171-20.025-11.225-23.408-.638-.238-.463-1.175.221-1.175h43.212c12.75 0 21.792 12.5 17.792 24.583"
 						fill={clsx('', {
-							'#334d65': footer,
-							'#95aec9': !footer,
+							'#334d65': footer === true,
+							'#95aec9': footer === false,
 						})}
 					/>
 					<path
@@ -44,15 +45,15 @@ export default function Logo(footer) {
 					<path
 						d="m874.999 32.8-41.084 124.042h-50L824.999 32.8c3.266-9.875-2.171-20.025-11.225-23.408-.638-.238-.463-1.175.22-1.175h43.213c12.75 0 21.792 12.5 17.792 24.583"
 						fill={clsx('', {
-							'#95aec9': footer,
-							'#334d65': !footer,
+							'#95aec9': footer === true,
+							'#334d65': footer === false,
 						})}
 					/>
 					<path
 						d="m935.266 32.8-41.083 124.042h-50L885.266 32.8c3.267-9.875-2.17-20.025-11.225-23.408-.637-.238-.462-1.175.221-1.175h43.213c12.75 0 21.791 12.5 17.791 24.583"
 						fill={clsx('', {
-							'#dee6ef': footer,
-							'#0f2c3c': !footer,
+							'#dee6ef': footer === true,
+							'#0f2c3c': footer === false,
 						})}
 					/>
 				</g>
