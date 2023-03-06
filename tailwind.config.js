@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
-	content: ['./src/**/*.{js,jsx}'],
+	content: ['./src/**/*.{js,jsx}', './node_modules/@unwrapdev/library/dist/components/**/*.tsx'],
 	theme: {
 		screens: {
 			xs: '475px',

@@ -10,8 +10,8 @@ import Gallery from '@/components/Gallery';
 import WhyUs from '@/components/WhyUs';
 import Testimonials from '@/components/Testimonials';
 import ContactUs from '@/components/ContactUs';
-
-// const inter = Inter({ subsets: ["latin"] });
+import { ButtonTest } from '@unwrapdev/library';
+// import ButtonTest from "@unwrapdev/library/dist/components/ButtonTest/ButtonTest";
 
 export default function Home() {
 	return (
@@ -23,58 +23,10 @@ export default function Home() {
 			</header>
 			<main className="flex-1">
 				<Landing></Landing>
-				<ServiceArea></ServiceArea>
-				<Services heading="Professional mobile dent repair" eyebrow="What we do"></Services>
-				<GraphicDiptych
-					eyebrow="What we do"
-					heading="Paintless dent repair"
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.  Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero"
-					buttonText="Contact us"
-					buttonLink="/contact"
-					index={0}
-					before="uploadCareuuid"
-					after="uploadCareuuid"
-				></GraphicDiptych>
-				<GraphicDiptych
-					eyebrow="Dent repair"
-					heading="Mobile paintless dent repair specialists"
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero.  Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo consectetur felis augue. Condimentum pellentesque sed aliquet leo in potenti libero"
-					buttonText="Contact us"
-					buttonLink="/contact"
-					index={1}
-					before="uploadCareuuid"
-					after="uploadCareuuid"
-					flipped={true}
-					background="bg-zinc-900"
-				></GraphicDiptych>
-
-				<Gallery
-					eyebrow="Gallery"
-					header="Some work from our previous clients"
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus. Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed."
-					images={['uploadCareuuid', 'uploadCareuui', 'uploadCareuui', 'uploadCareuui']}
-				></Gallery>
-
-				<WhyUs eyebrow="Why choose us" heading="Paintless dent repair you can trust" text="">
-					<p className="mt-4 max-w-prose">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus.
-						Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo
-						consectetur felis augue.
-					</p>
-
-					<p className="mt-3 max-w-prose">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus.
-						Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo
-						consectetur felis augue.
-					</p>
-				</WhyUs>
-
-				<Testimonials
-					eyebrow="Testimonials"
-					header="Words from our local customers"
-					text="At Stitch Cleaning Service, let us help you solve problems so that you can focus on your mission. We support businesses through periods of expansion, succession."
-					location="default"
-				></Testimonials>
+					<div className="p-10 mx-10 my-40 bg-orange-50 border border-neutral-500">
+						test
+						<ButtonTest text="asd" />
+					</div>
 
 				<ContactUs
 					eyebrow="Contact us"
