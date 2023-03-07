@@ -18,7 +18,7 @@ export default function Footer({ phone, email }) {
 				</div>
 
 				<div className="flex flex-row flex-wrap justify-between gap-3 lg:col-span-7 lg:col-start-6 lg:flex-nowrap">
-					<div className="">
+					<div>
 						<h2 className="mb-3 font-bold">Menu</h2>
 						<nav>
 							<ul className="space-y-2 text-slate-500">
@@ -40,7 +40,7 @@ export default function Footer({ phone, email }) {
 							</ul>
 						</nav>
 					</div>
-					<div className="">
+					<div>
 						<h2 className="mb-3 font-bold">Locations</h2>
 						<nav>
 							<ul className="space-y-2 text-slate-500">
@@ -57,7 +57,7 @@ export default function Footer({ phone, email }) {
 							</ul>
 						</nav>
 					</div>
-					<div className="">
+					<div>
 						<h2 className="mb-3 font-bold">Services</h2>
 						<ul className="space-y-2 text-slate-500">
 							<li>Mobile dent repair</li>
@@ -66,7 +66,7 @@ export default function Footer({ phone, email }) {
 							<li>Hail dent repair</li>
 						</ul>
 					</div>
-					<div className="">
+					<div>
 						<h2 className="mb-3 font-bold">Contact</h2>
 						<nav>
 							<ul className="space-y-2 text-slate-500">
@@ -87,8 +87,8 @@ export default function Footer({ phone, email }) {
 					</div>
 				</div>
 
-				<div className="border-t border-neutral-900 lg:col-span-12">
-					<span className="block py-4 text-sm">
+				<div className="border-t border-neutral-900 py-8 lg:col-span-12 ">
+					<span className="block text-sm">
 						© 2023 Copyright - Design, Development, and Marketing by{' '}
 						<Link href="https://www.unwrapdesign.com/" className="inline-block underline">
 							Unwrap Design
