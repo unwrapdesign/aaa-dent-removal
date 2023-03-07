@@ -2,7 +2,7 @@ import Quotes from './Quotes';
 
 export default function Review({ review, name, location }) {
 	return (
-		<review-card class="flex flex-col justify-between gap-8 border border-slate-200 bg-slate-50 py-7 px-6">
+		<review-card class="flex flex-col justify-between gap-8 border border-slate-200 bg-neutral-50 py-7 px-6">
 			<div className="">
 				<Quotes className="max-w-[30px]" />
 				<p className="mt-7 max-w-prose">{review}</p>
