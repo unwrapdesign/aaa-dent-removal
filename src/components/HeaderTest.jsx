@@ -37,7 +37,7 @@ export default function Header() {
 			<nav>
 				<div className="inner-column relative z-50 flex items-center justify-between py-1">
 					<span className="absolute left-[-360px] z-10 block h-full w-[600px] border-r-4 border-sky-800 bg-gray-900 xs:left-[-300px] xs:border-r-8"></span>
-					<div className="relative z-20 flex items-center gap-16">
+					<div className="relative z-20 flex items-center gap-16 py-1">
 						<Link href="/" aria-label="Home">
 							<Logo className="h-10 w-auto" footer={false} />
 						</Link>
