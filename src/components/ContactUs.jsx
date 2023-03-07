@@ -1,4 +1,4 @@
-import Button from './Button';
+import { Button } from './Button';
 import Eyebrow from './Eyebrow';
 
 export default function ContactUs({ eyebrow, header, text, buttonText, buttonTextTwo }) {
@@ -14,7 +14,7 @@ export default function ContactUs({ eyebrow, header, text, buttonText, buttonTex
 					<Eyebrow color="text-sky-500">{eyebrow}</Eyebrow>
 					<h2 className="attention-voice text-neutral-100">{header}</h2>
 					<p className="mt-4 max-w-prose text-neutral-100 lg:max-w-[55ch] xl:max-w-prose">{text}</p>
-					<div className="mt-8 space-x-4">
+					<div className="mt-8 flex flex-col space-y-4 xs:block xs:space-x-4 xs:space-y-0">
 						<Button href="/rocklin">{buttonText}</Button>
 						<Button href="/florida">{buttonTextTwo}</Button>
 					</div>

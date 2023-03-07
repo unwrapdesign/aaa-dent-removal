@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { Popover } from '@headlessui/react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 import Logo from '@/components/Logo';
+import NavLinks from './NavLinks';
 // import { NavLinks } from '@/components/NavLinks';
 
 function MenuIcon(props) {
@@ -32,10 +33,11 @@ function MobileNavLink({ children, ...props }) {
 
 export default function Header() {
 	return (
-		<header>
+		<header className="sticky top-0 z-50 bg-white shadow-md shadow-slate-900/5">
 			<nav>
 				<div className="inner-column relative z-50 flex items-center justify-between py-1">
-					<div className="relative z-10 flex items-center gap-16">
+					<span className="absolute left-[-360px] z-10 block h-full w-[600px] border-r-4 border-sky-800 bg-gray-900 xs:left-[-300px] xs:border-r-8"></span>
+					<div className="relative z-20 flex items-center gap-16">
 						<Link href="/" aria-label="Home">
 							<Logo className="h-10 w-auto" footer={false} />
 						</Link>
@@ -77,13 +79,12 @@ export default function Header() {
 														y: -32,
 														transition: { duration: 0.2 },
 													}}
-													className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-lg bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
+													className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-lg bg-gray-50 px-6 pb-6 pt-24 shadow-2xl shadow-gray-900/20"
 												>
 													<div className="space-y-4">
-														<Link href="#features">Home</Link>
-														<Link href="#reviews">Gallery</Link>
-														<Link href="#pricing">Locations</Link>
-														<Link href="#faqs">FAQs</Link>
+														<Link href="/">Home</Link>
+														<Link href="/gallery">Gallery</Link>
+														<Link href="/locations">Locations</Link>
 													</div>
 													<div className="mt-8 flex flex-col gap-4">
 														<Button href="/login" variant="outline">
@@ -98,18 +99,10 @@ export default function Header() {
 							)}
 						</Popover>
 						<div className="hidden md:flex md:gap-10">
-							<ul className="flex flex-row items-center gap-8">
+							<ul className="flex flex-row items-center gap-8 text-sm">
+								<NavLinks></NavLinks>
 								<li>
-									<Link href="/">Home</Link>
-								</li>
-								<li>
-									<Link href="/gallery">Gallery</Link>
-								</li>
-								<li>
-									<Link href="/locations">Locations</Link>
-								</li>
-								<li>
-									<Button href="/contact" className="py-2 text-sm md:px-6">
+									<Button href="/contact" variant="outline" className="py-2 text-sm md:px-6">
 										FREE Estimate
 									</Button>
 								</li>

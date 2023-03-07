@@ -1,5 +1,5 @@
 import Eyebrow from '@/components/Eyebrow';
-import Button from './Button';
+import { Button } from './Button';
 
 export default function GraphicDiptych({ eyebrow, heading, text, buttonText, buttonLink, index, flipped, background }) {
 	let beforeAfter = [

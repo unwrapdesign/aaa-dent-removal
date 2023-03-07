@@ -1,4 +1,4 @@
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 import Checkmark from '@/components/Checkmark';
 
 export default function Landing() {

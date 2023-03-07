@@ -1,6 +1,6 @@
 import Phone from '@/components/Phone';
 import Email from '@/components/Email';
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 
 export default function LocationCard({ location, state, cities, weekday, weekend, phone, email, link, offer }) {
 	return (
