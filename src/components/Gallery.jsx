@@ -9,8 +9,10 @@ export default function Gallery({ eyebrow, header, text, images }) {
 				<text-content class="mb-12">
 					<Eyebrow>{eyebrow}</Eyebrow>
 					<h2 className="attention-voice max-w-prose">{header}</h2>
-					<p className="mt-4 mb-4 max-w-prose">{text}</p>
-					<Button href="/contact">View More</Button>
+					<p className="mt-4 max-w-prose">{text}</p>
+					<Button href="/contact" variant="outline" color="primary" className="mt-6">
+						View More
+					</Button>
 				</text-content>
 
 				<GalleryShowcase images={images}></GalleryShowcase>

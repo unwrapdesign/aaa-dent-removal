@@ -6,8 +6,8 @@ export default function ServiceArea() {
 			<div className="inner-column">
 				<text-content class="mb-14 max-w-3xl">
 					<Eyebrow>Locations</Eyebrow>
-					<h2 className="attention-voice mb-4">Pick your service area</h2>
-					<p className="max-w-prose">
+					<h2 className="attention-voice">Pick your service area</h2>
+					<p className="mt-4 max-w-prose">
 						We service both California and Florida. Pick a location to ensure we provide you with accurate
 						information, and an accurate quote regarding our services.
 					</p>

@@ -10,8 +10,8 @@ export default function Services({ heading }) {
 			<div className="inner-column">
 				<Eyebrow>AAA Dent Repair</Eyebrow>
 				<text-content class="max-w-3xl">
-					<h2 className="attention-voice mb-4">{heading}</h2>
-					<p className="max-w-prose">
+					<h2 className="attention-voice">{heading}</h2>
+					<p className="mt-4 max-w-prose">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus.
 						Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo
 						consectetur felis augue.

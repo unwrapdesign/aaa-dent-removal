@@ -87,9 +87,7 @@ export default function Header() {
 														<Link href="/locations">Locations</Link>
 													</div>
 													<div className="mt-8 flex flex-col gap-4">
-														<Button href="/login" variant="outline">
-															FREE estimate
-														</Button>
+														<Button href="/login">FREE estimate</Button>
 													</div>
 												</Popover.Panel>
 											</>
@@ -102,7 +100,7 @@ export default function Header() {
 							<ul className="flex flex-row items-center gap-8 text-sm">
 								<NavLinks></NavLinks>
 								<li>
-									<Button href="/contact" variant="outline" className="py-2 text-sm md:px-6">
+									<Button href="/contact" className="">
 										FREE Estimate
 									</Button>
 								</li>

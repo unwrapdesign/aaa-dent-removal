@@ -50,9 +50,11 @@ export default function LocationCard({ location, state, cities, weekday, weekend
 					</li>
 				</ul>
 			</contact-info>
-			<location-links class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-x-6 lg:gap-4 xl:gap-6">
+			<location-links class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-4">
 				<Button href={location}>View Location</Button>
-				<Button href={link}>Get Local Offer</Button>
+				<Button href={link} variant="outline" color="primary">
+					Get Local Offer
+				</Button>
 			</location-links>
 		</location-card>
 	);

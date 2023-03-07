@@ -61,7 +61,7 @@ export default function Home() {
 						consectetur felis augue.
 					</p>
 
-					<p className="mt-3 max-w-prose">
+					<p className="mt-4 max-w-prose">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa ut sed odio cursus.
 						Malesuada scelerisque eget eu, sollicitudin tellus nibh aenean enim sed. Ut vitae eget commodo
 						consectetur felis augue.
@@ -83,7 +83,7 @@ export default function Home() {
 					buttonTextTwo="Contact Jacksonville, FL"
 				></ContactUs>
 			</main>
-			<Footer phone="(555) 555 5555" email="info@example.com" />
+			<Footer phone="(555) 555 5555" email="aaadentrepair@gmail.com" />
 		</>
 	);
 }

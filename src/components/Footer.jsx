@@ -5,7 +5,7 @@ import Phone from './Phone';
 
 export default function Footer({ phone, email }) {
 	return (
-		<footer className="">
+		<footer className="text-sm">
 			<div className="inner-column grid grid-cols-1 gap-8 lg:grid-cols-12">
 				<div className="lg:col-span-4">
 					<div className="w-full max-w-[420px]">
@@ -21,7 +21,7 @@ export default function Footer({ phone, email }) {
 					<div className="">
 						<h2 className="mb-3 font-bold">Menu</h2>
 						<nav>
-							<ul className="space-y-2">
+							<ul className="space-y-2 text-slate-500">
 								<li>
 									<Link href="/locations" className="-my-1 -mx-2 py-1 px-2 hover:underline">
 										Locations
@@ -43,7 +43,7 @@ export default function Footer({ phone, email }) {
 					<div className="">
 						<h2 className="mb-3 font-bold">Locations</h2>
 						<nav>
-							<ul className="space-y-2">
+							<ul className="space-y-2 text-slate-500">
 								<li>
 									<Link href="/rocklin" className="-my-1 -mx-2 py-1 px-2 hover:underline">
 										Rocklin, CA
@@ -59,7 +59,7 @@ export default function Footer({ phone, email }) {
 					</div>
 					<div className="">
 						<h2 className="mb-3 font-bold">Services</h2>
-						<ul className="space-y-2">
+						<ul className="space-y-2 text-slate-500">
 							<li>Mobile dent repair</li>
 							<li>Paintless dent repair</li>
 							<li>Door ding removal</li>
@@ -69,14 +69,18 @@ export default function Footer({ phone, email }) {
 					<div className="">
 						<h2 className="mb-3 font-bold">Contact</h2>
 						<nav>
-							<ul className="space-y-2">
+							<ul className="space-y-2 text-slate-500">
 								<li className="flex flex-row items-center gap-2">
 									<Phone />
-									<a href={`tel:${phone}`}>{phone}</a>
+									<a href={`tel:${phone}`} className="hover:underline">
+										{phone}
+									</a>
 								</li>
 								<li className="flex flex-row items-center gap-2">
 									<Email />
-									<a href={`mailto:${email}`}>{email}</a>
+									<a href={`mailto:${email}`} className="hover:underline">
+										{email}
+									</a>
 								</li>
 							</ul>
 						</nav>
