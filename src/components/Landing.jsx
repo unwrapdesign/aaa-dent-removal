@@ -8,15 +8,7 @@ export default function Landing() {
 		<section className="relative z-10">
 			<div className="inner-column">
 				<picture className="absolute inset-0 -z-10 block h-full w-full before:pointer-events-none before:absolute before:z-10 before:h-full before:w-full before:bg-black before:opacity-75">
-					<Image
-						src={LandingImg}
-						alt=""
-						width={1440}
-						height={780}
-						priority={true}
-						placeholder="blur"
-						className="h-full object-cover"
-					/>
+					<Image src={LandingImg} alt="" fill priority placeholder="blur" className="h-full object-cover" />
 				</picture>
 				<text-content class="py-36">
 					<h1 className="title-voice mb-8 text-slate-50">AAA Dent Removal</h1>
