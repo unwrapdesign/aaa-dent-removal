@@ -8,7 +8,6 @@ export default function NavLinks() {
 	return [
 		['Home', '/'],
 		['Gallery', '/gallery'],
-		['Locations', '/locations'],
 	].map(([label, href], index) => (
 		<li key={label}>
 			<Link

@@ -1,7 +1,7 @@
 export default function Gallery() {
 	return (
-		<>
-			<h2>gallery</h2>
+		<div className="bg-black text-white">
+			<h2 className="text-5xl">gallery</h2>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi ea repudiandae vero eaque ratione,
 				perspiciatis nisi odit alias error perferendis inventore ipsam sint officiis iusto quas quam aut
@@ -42,6 +42,6 @@ export default function Gallery() {
 				soluta voluptate sapiente iusto maxime! Eligendi unde non a dicta ea, officiis sint consequatur eaque
 				debitis fuga blanditiis delectus dolorem eveniet amet iste et!
 			</p>
-		</>
+		</div>
 	);
 }

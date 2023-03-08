@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import { Popover } from '@headlessui/react';
 import { AnimatePresence, motion } from 'framer-motion';
-
-import { Button } from '@/components/Button';
-import Logo from '@/components/Logo';
 import NavLinks from './NavLinks';
 // import { NavLinks } from '@/components/NavLinks';
 
@@ -33,14 +30,11 @@ function MobileNavLink({ children, ...props }) {
 
 export default function Header() {
 	return (
-		<header className="sticky top-0 z-50 bg-white shadow-md shadow-slate-900/5">
+		<header className="sticky top-0 z-50 bg-white py-5 shadow-md shadow-slate-900/5">
 			<nav>
 				<div className="inner-column relative z-50 flex items-center justify-between py-1">
-					<span className="absolute left-[-360px] z-10 block h-full w-[600px] border-r-4 border-sky-800 bg-gray-900 xs:left-[-300px] xs:border-r-8"></span>
 					<div className="relative z-20 flex items-center gap-16 py-1">
-						<Link href="/" aria-label="Home">
-							<Logo className="h-10 w-auto" footer={false} />
-						</Link>
+						<p className="">this is not a link</p>
 					</div>
 					<div className="flex items-center justify-center gap-6">
 						<Popover className="md:hidden">
@@ -86,9 +80,6 @@ export default function Header() {
 														<Link href="/gallery">Gallery</Link>
 														<Link href="/locations">Locations</Link>
 													</div>
-													<div className="mt-8 flex flex-col gap-4">
-														<Button href="/login">FREE estimate</Button>
-													</div>
 												</Popover.Panel>
 											</>
 										)}
@@ -99,11 +90,6 @@ export default function Header() {
 						<div className="hidden md:flex md:gap-10">
 							<ul className="flex flex-row items-center gap-8 text-sm">
 								<NavLinks></NavLinks>
-								<li>
-									<Button href="/contact" className="">
-										FREE Estimate
-									</Button>
-								</li>
 							</ul>
 						</div>
 					</div>
