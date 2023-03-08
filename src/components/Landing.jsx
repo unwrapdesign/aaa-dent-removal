@@ -1,5 +1,6 @@
 import { Button } from '@/components/Button';
 import Checkmark from '@/components/Checkmark';
+import LandingImg from '../../public/landing.jpeg';
 import Image from 'next/image';
 
 export default function Landing() {
@@ -8,11 +9,13 @@ export default function Landing() {
 			<div className="inner-column">
 				<picture className="absolute inset-0 -z-10 block h-full w-full before:pointer-events-none before:absolute before:z-10 before:h-full before:w-full before:bg-black before:opacity-75">
 					<Image
-						src="/landing.jpeg"
+						src={LandingImg}
 						alt=""
 						width={1440}
 						height={780}
-						className="absolute inset-0 h-full object-cover"
+						priority={true}
+						placeholder="blur"
+						className="h-full object-cover"
 					/>
 				</picture>
 				<text-content class="py-36">
