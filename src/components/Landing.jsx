@@ -1,15 +1,18 @@
 import { Button } from '@/components/Button';
 import Checkmark from '@/components/Checkmark';
+import Image from 'next/image';
 
 export default function Landing() {
 	return (
 		<section className="relative z-10">
 			<div className="inner-column">
 				<picture className="absolute inset-0 -z-10 block h-full w-full before:pointer-events-none before:absolute before:z-10 before:h-full before:w-full before:bg-black before:opacity-75">
-					<img
-						className="h-full object-cover"
+					<Image
 						src="https://ucarecdn.com/5c26c24e-4340-41d5-858d-6505b80debcb/"
 						alt=""
+						width={1440}
+						height={780}
+						className="h-full object-cover"
 					/>
 				</picture>
 				<text-content class="py-36">

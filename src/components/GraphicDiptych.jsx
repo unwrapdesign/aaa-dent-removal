@@ -1,4 +1,5 @@
 import Eyebrow from '@/components/Eyebrow';
+import Image from 'next/image';
 import { Button } from './Button';
 
 export default function GraphicDiptych({ eyebrow, heading, text, buttonText, buttonLink, index, flipped, background }) {
@@ -17,7 +18,13 @@ export default function GraphicDiptych({ eyebrow, heading, text, buttonText, but
 								flipped === true ? 'col-start-2' : ''
 							}`}
 						>
-							<img className="block h-auto w-full" src={beforeAfter[index]} alt="" />
+							<Image
+								src={beforeAfter[index]}
+								className="block h-auto w-full"
+								width={500}
+								height={500}
+								alt=""
+							/>
 						</picture>
 					</div>
 					<div className={`${flipped === true ? 'row-start-1' : ''}`}>
