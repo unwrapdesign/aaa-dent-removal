@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, domAnimation, LazyMotion, m } from 'framer-motion';
 
 export default function NavLinks() {
 	let [hoveredIndex, setHoveredIndex] = useState(null);
@@ -17,20 +17,22 @@ export default function NavLinks() {
 				onMouseEnter={() => setHoveredIndex(index)}
 				onMouseLeave={() => setHoveredIndex(null)}
 			>
-				<AnimatePresence>
-					{hoveredIndex === index && (
-						<motion.span
-							className="absolute inset-0 bg-gray-100"
-							layoutId="hoverBackground"
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1, transition: { duration: 0.15 } }}
-							exit={{
-								opacity: 0,
-								transition: { duration: 0.15, delay: 0.2 },
-							}}
-						/>
-					)}
-				</AnimatePresence>
+				<LazyMotion features={domAnimation}>
+					<AnimatePresence>
+						{hoveredIndex === index && (
+							<m.span
+								className="absolute inset-0 bg-gray-100"
+								layoutId="hoverBackground"
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1, transition: { duration: 0.15 } }}
+								exit={{
+									opacity: 0,
+									transition: { duration: 0.15, delay: 0.2 },
+								}}
+							/>
+						)}
+					</AnimatePresence>
+				</LazyMotion>
 				<span className="relative z-10">{label}</span>
 			</Link>
 		</li>
