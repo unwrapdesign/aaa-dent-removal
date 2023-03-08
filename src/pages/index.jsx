@@ -19,7 +19,7 @@ import Header from '@/components/Header';
 export default function Home() {
 	return (
 		<>
-			<HeaderTest />
+			{/* <HeaderTest /> */}
 			<main className="flex-1">
 				<Landing></Landing>
 				<ServiceArea></ServiceArea>
