@@ -1,5 +1,7 @@
 import { Button } from './Button';
 import Eyebrow from './Eyebrow';
+import Landscape from '../../public/landscape.jpg';
+import Image from 'next/image';
 
 export default function ContactUs({ eyebrow, header, text, buttonText, buttonTextTwo }) {
 	return (
@@ -21,11 +23,7 @@ export default function ContactUs({ eyebrow, header, text, buttonText, buttonTex
 				</div>
 
 				<picture className="absolute right-[15px] bottom-0 hidden aspect-[9/16] lg:block lg:h-[520px] lg:w-[350px] xl:h-[520px] xl:w-[450px]">
-					<img
-						className="h-full w-full object-cover"
-						src="https://peprojects.dev/images/landscape.jpg"
-						alt=""
-					/>
+					<Image src={Landscape} className="h-full  object-cover" alt=""></Image>
 				</picture>
 			</div>
 		</section>
