@@ -1,12 +1,11 @@
 import Eyebrow from '@/components/Eyebrow';
 import Image from 'next/image';
 import { Button } from './Button';
+import Before from '../../public/before.png';
+import BeforeTwo from '../../public/before2.png';
 
 export default function GraphicDiptych({ eyebrow, heading, text, buttonText, buttonLink, index, flipped, background }) {
-	let beforeAfter = [
-		'https://ucarecdn.com/46f7079e-ad3b-4096-91f3-37c7986d9c91/',
-		'https://ucarecdn.com/2e95c95b-655d-4fc6-af0a-2bfbf55de5b9/',
-	];
+	let beforeAfter = [Before, BeforeTwo];
 
 	return (
 		<section className={`${background ? background + ' text-white' : 'bg-slate-100'}`}>
@@ -20,6 +19,7 @@ export default function GraphicDiptych({ eyebrow, heading, text, buttonText, but
 						>
 							<Image
 								src={beforeAfter[index]}
+								placeholder="blur"
 								className="block h-auto w-full"
 								width={500}
 								height={500}
