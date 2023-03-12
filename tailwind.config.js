@@ -2,7 +2,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const unwrapTheme = require('@unwrapdev/library/tailwind.config');
 module.exports = {
-	content: ['./src/**/*.{js,jsx}', './node_modules/@unwrapdev/library/dist/components/**/*.tsx'],
+	content: ['./src/**/*.{js,jsx}', './node_modules/@unwrapdev/library/dist/**/*.tsx'],
 	theme: {
 		...unwrapTheme.theme,
 		screens: {
