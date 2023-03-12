@@ -48,7 +48,6 @@ export default function Home() {
 							height: '800',
 							width: '800',
 							maxHeight: '400',
-							maxWidth: '800'
 						}}
 						firstImage={{
 							alt: '',
