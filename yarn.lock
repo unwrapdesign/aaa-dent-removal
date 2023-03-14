@@ -217,10 +217,10 @@
     "@typescript-eslint/types" "5.54.0"
     "eslint-visitor-keys" "^3.3.0"
 
-"@unwrapdev/library@^0.1.21":
-  "integrity" "sha512-7L1quP4NfMGQ7Nq/HQIn8VqM6svEE6U6qjn2h+LB1HDHTfDs7t5aPLtoRU1Gits2kAJJ9wZq27L002bZnCBV0A=="
-  "resolved" "https://registry.npmjs.org/@unwrapdev/library/-/library-0.1.21.tgz"
-  "version" "0.1.21"
+"@unwrapdev/library@^0.1.22":
+  "integrity" "sha512-EKCKchCK3G4l8ohWj5NNJELLYoPwRsadgxQXD6vuiv1RWe8IckvI5e+OrKh7eCbKtTRUdaEEWFoBXOCO+LgxVw=="
+  "resolved" "https://registry.npmjs.org/@unwrapdev/library/-/library-0.1.22.tgz"
+  "version" "0.1.22"
   dependencies:
     "@types/node" "18.14.6"
     "@types/react" "18.0.28"

@@ -11,6 +11,8 @@ import WhyUs from '@/components/WhyUs';
 import Testimonials from '@/components/Testimonials';
 import ContactUs from '@/components/ContactUs';
 import ImageSlider from '@unwrapdev/library/dist/ImageSlider/ImageSlider';
+import UImage from '@unwrapdev/library/dist/UImage/UImage';
+
 import HoodieWhite from "../../public/hoodie-white.jpeg";
 import HoodieBlack from "../../public/hoodie-black.jpeg";
 
@@ -23,7 +25,10 @@ export default function Home() {
 				</div>
 			</header>
 			<main className="flex-1">
-				<Landing></Landing>
+				<div className="p-10 mx-10 my-40 bg-orange-50 border border-neutral-500">
+				<UImage src="a32070e7-4bc3-4674-a794-c349171366c0" />
+				</div>
+
 				<div className="p-10 mx-10 my-40 bg-orange-50 border border-neutral-500">
 					<ImageSlider
 						dimensions={{
@@ -40,6 +45,7 @@ export default function Home() {
 							imageUrl: HoodieWhite,
 						}}
 					/>
+					
 				</div>
 
 				<div className="p-10 mx-10 my-40 bg-orange-50 border border-neutral-500">
@@ -59,7 +65,6 @@ export default function Home() {
 						}}
 					/>
 				</div>
-
 
 				<ContactUs
 					eyebrow="Contact us"
